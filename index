@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade — alexandria backup</title>
+    <meta name="description" content="Política de Privacidade do aplicativo pessoal alexandria backup." />
+    <meta name="robots" content="index, follow" />
+    <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #1a1a1a;
+        --text-muted: #555555;
+        --border-color: #e0e0e0;
+        --card-bg: #f8f9fa;
+        --link-color: #0b57d0;
+        --link-hover: #0842a0;
+        --highlight-bg: #fef08a;
+        --highlight-text: #854d0e;
+        --highlight-border: #ca8a04;
+        --code-bg: #f1f3f5;
+        --badge-bg: #e8f0fe;
+        --badge-text: #174ea6;
+        --divider-color: #d1d5db;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #121212;
+          --text-color: #e4e4e7;
+          --text-muted: #a1a1aa;
+          --border-color: #27272a;
+          --card-bg: #18181b;
+          --link-color: #60a5fa;
+          --link-hover: #93c5fd;
+          --highlight-bg: #713f12;
+          --highlight-text: #fef08a;
+          --highlight-border: #eab308;
+          --code-bg: #27272a;
+          --badge-bg: #1e3a5f;
+          --badge-text: #93c5fd;
+          --divider-color: #3f3f46;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.7;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 2rem 1.25rem 4rem;
+      }
+
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .app-badge {
+        display: inline-block;
+        background-color: var(--badge-bg);
+        color: var(--badge-text);
+        font-size: 0.825rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.65rem;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        line-height: 1.25;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        color: var(--text-muted);
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .lang-switcher {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        font-size: 0.925rem;
+      }
+
+      .lang-switcher span {
+        font-weight: 600;
+        color: var(--text-muted);
+      }
+
+      .lang-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.75rem;
+        background: var(--bg-color);
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: border-color 0.15s ease;
+      }
+
+      .lang-btn:hover {
+        border-color: var(--link-color);
+        text-decoration: underline;
+      }
+
+      .toc {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 1.25rem 1.5rem;
+        margin: 1.5rem 0 2.5rem;
+      }
+
+      .toc-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+      }
+
+      .toc ol {
+        padding-left: 1.4rem;
+      }
+
+      .toc li {
+        margin-bottom: 0.35rem;
+        font-size: 0.95rem;
+      }
+
+      .toc a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        margin-bottom: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+        padding-top: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      ul, ol {
+        margin-bottom: 1rem;
+        padding-left: 1.4rem;
+      }
+
+      li {
+        margin-bottom: 0.35rem;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: var(--link-hover);
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.9em;
+        background: var(--code-bg);
+        padding: 0.15em 0.4em;
+        border-radius: 3px;
+      }
+
+      .notice-box {
+        background: var(--card-bg);
+        border-left: 4px solid var(--link-color);
+        padding: 1rem 1.25rem;
+        margin: 1.25rem 0;
+        border-radius: 0 6px 6px 0;
+      }
+
+      .notice-box p:last-child {
+        margin-bottom: 0;
+      }
+
+      .placeholder {
+        display: inline-block;
+        background-color: var(--highlight-bg);
+        color: var(--highlight-text);
+        border: 1px dashed var(--highlight-border);
+        font-weight: 700;
+        padding: 0.05rem 0.4rem;
+        border-radius: 4px;
+        font-family: inherit;
+        letter-spacing: 0.01em;
+      }
+
+      .policy-divider {
+        margin: 3.5rem 0;
+        border: 0;
+        border-top: 2px dashed var(--divider-color);
+      }
+
+      .last-updated {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+        font-weight: 600;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 1.25rem 1rem 3rem;
+          font-size: 15px;
+        }
+
+        h1 {
+          font-size: 1.65rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Navegação de Idioma / Language Navigation -->
+      <nav class="lang-switcher" aria-label="Seleção de idioma / Language selector">
+        <span>Idioma / Language:</span>
+        <a class="lang-btn" href="#pt-br">🇧🇷 Português (Brasil)</a>
+        <a class="lang-btn" href="#en">🇺🇸 English</a>
+      </nav>
+
+      <!-- ========================================================= -->
+      <!-- VERSÃO EM PORTUGUÊS (BRASIL)                             -->
+      <!-- ========================================================= -->
+      <main id="pt-br" lang="pt-BR">
+        <header>
+          <div class="app-badge">Aplicativo de Uso Pessoal</div>
+          <h1>Política de Privacidade — alexandria backup</h1>
+          <p class="subtitle">Transparência sobre o uso e a proteção dos seus dados</p>
+        </header>
+
+        <!-- Sumário / Links de Âncora -->
+        <nav class="toc" aria-label="Sumário da Política de Privacidade em Português">
+          <div class="toc-title">Índice</div>
+          <ol>
+            <li><a href="#pt-1">Quem somos e como falar conosco</a></li>
+            <li><a href="#pt-2">O que é o aplicativo</a></li>
+            <li><a href="#pt-3">Quais dados acessamos (e quais não acessamos)</a></li>
+            <li><a href="#pt-4">Para que usamos os dados</a></li>
+            <li><a href="#pt-5">Como os dados são armazenados e protegidos</a></li>
+            <li><a href="#pt-6">Compartilhamento de dados</a></li>
+            <li><a href="#pt-7">Retenção e exclusão</a></li>
+            <li><a href="#pt-8">Direitos do titular (LGPD) e contato</a></li>
+            <li><a href="#pt-9">Conformidade com os Serviços de API do Google</a></li>
+            <li><a href="#pt-10">Crianças, cookies e alterações desta política</a></li>
+          </ol>
+        </nav>
+
+        <section id="pt-1">
+          <h2>1. Quem somos e como falar conosco</h2>
+          <p>
+            O <strong>alexandria backup</strong> é um projeto e aplicativo OAuth de uso estritamente pessoal, desenvolvido e mantido por Pedro Vendramini.
+          </p>
+          <p>
+            Para qualquer dúvida, esclarecimento ou solicitação relacionada a esta política e à privacidade do aplicativo, entre em contato diretamente pelo e-mail: <a href="mailto:pedrovendramini.pv@gmail.com">pedrovendramini.pv@gmail.com</a>.
+          </p>
+          <p>
+            O aplicativo não é oferecido como um serviço comercial nem é distribuído para uso público ou por terceiros; não existem outros usuários além do próprio desenvolvedor/proprietário.
+          </p>
+        </section>
+
+        <section id="pt-2">
+          <h2>2. O que é o aplicativo</h2>
+          <p>
+            O <strong>alexandria backup</strong> é uma automação pessoal para realizar cópias de segurança (backup) dos arquivos contidos no servidor doméstico do seu próprio dono diretamente para o seu próprio armazenamento em nuvem no Google Drive.
+          </p>
+          <p>
+            O aplicativo opera integrado às ferramentas de código aberto <strong>restic</strong> (para deduplicação e criptografia de ponta a ponta) e <strong>rclone</strong> (para sincronização e transferência dos dados via API).
+          </p>
+        </section>
+
+        <section id="pt-3">
+          <h2>3. Quais dados acessamos (e quais não acessamos)</h2>
+          <p>
+            O princípio do aplicativo é a restrição máxima de permissões:
+          </p>
+          <ul>
+            <li>
+              <strong>O que acessamos:</strong> O aplicativo solicita unicamente o escopo OAuth restrito à pasta de dados do próprio aplicativo (<code>https://www.googleapis.com/auth/drive.appdata</code> / <code>drive.appfolder</code>). Esse escopo permite criar, ler e gravar arquivos exclusivamente em uma pasta oculta e dedicada ao aplicativo no Google Drive do dono.
+            </li>
+            <li>
+              <strong>O que NÃO acessamos:</strong> O aplicativo <strong>NÃO</strong> possui acesso aos arquivos do "Meu Drive", nem a e-mails (Gmail), listas de contatos, eventos da agenda (Google Calendar), fotos (Google Photos), documentos ou qualquer outro dado pessoal contido na conta Google. O aplicativo sequer tem visibilidade da existência de outros arquivos ou pastas fora de seu próprio diretório oculto de aplicação.
+            </li>
+          </ul>
+        </section>
+
+        <section id="pt-4">
+          <h2>4. Para que usamos os dados</h2>
+          <p>
+            As informações e permissões solicitadas destinam-se a uma única finalidade:
+          </p>
+          <ul>
+            <li>Permitir que o aplicativo envie, liste, atualize e leia os blocos de backup gerados para a pasta oculta de aplicação (<code>appdata</code>) do Google Drive do dono, garantindo a realização e eventual restauração de cópias de segurança.</li>
+          </ul>
+          <p>
+            Nenhum dado é utilizado para monitoramento de comportamento, criação de perfis, aprendizado de máquina, publicidade ou qualquer finalidade alheia à sincronização do backup.
+          </p>
+        </section>
+
+        <section id="pt-5">
+          <h2>5. Como os dados são armazenados e protegidos</h2>
+          <p>
+            A integridade e o sigilo dos dados são resguardados através de arquitetura de segurança de conhecimento zero (<em>zero-knowledge</em>) perante terceiros:
+          </p>
+          <ul>
+            <li>
+              <strong>Criptografia pré-envio no dispositivo de origem:</strong> Todos os arquivos e diretórios são criptografados localmente no servidor doméstico pelo <em>restic</em> antes de qualquer transmissão pela rede. Os dados já chegam ao Google Drive totalmente cifrados.
+            </li>
+            <li>
+              <strong>Chaves e credenciais locais:</strong> A senha/chave de criptografia do restic e as credenciais e tokens de acesso OAuth são armazenados exclusivamente no disco do servidor doméstico do proprietário. Nenhuma chave ou token transita por servidores intermediários nem fica acessível ao público.
+            </li>
+            <li>
+              <strong>Transmissão segura:</strong> Toda comunicação com os servidores do Google é realizada estritamente por meio de conexões criptografadas em trânsito (HTTPS / TLS).
+            </li>
+          </ul>
+        </section>
+
+        <section id="pt-6">
+          <h2>6. Compartilhamento de dados</h2>
+          <p>
+            Não existe nenhum tipo de compartilhamento:
+          </p>
+          <ul>
+            <li><strong>Zero venda de dados:</strong> Nenhum dado é comercializado ou alugado sob hipótese alguma.</li>
+            <li><strong>Zero publicidade:</strong> Não há exibição de anúncios nem rastreamento comercial.</li>
+            <li><strong>Zero terceiros:</strong> Nenhuma informação é compartilhada com empresas parceiras, fornecedores de telemetria ou terceiros.</li>
+            <li><strong>Zero análise/rastreamento:</strong> O aplicativo não integra bibliotecas de analytics, estatísticas de uso ou relatórios de erros externos.</li>
+          </ul>
+        </section>
+
+        <section id="pt-7">
+          <h2>7. Retenção e exclusão</h2>
+          <p>
+            Os arquivos de backup permanecem armazenados na pasta de dados oculta do aplicativo enquanto o proprietário mantiver o backup ativo, de acordo com as políticas de retenção configuradas no seu próprio restic.
+          </p>
+          <p>
+            Para apagar todos os dados armazenados pelo aplicativo ou revogar suas credenciais a qualquer momento:
+          </p>
+          <ol>
+            <li>
+              <strong>Excluir os dados do aplicativo no Google Drive:</strong>
+              Acesse o Google Drive pelo navegador, vá em <em>Configurações</em> (ícone de engrenagem no canto superior direito) &gt; <em>Gerenciar apps</em>. Localize <strong>alexandria backup</strong>, clique em <em>Opções</em> e selecione <em>Excluir dados ocultos de apps</em>. Isso apagará permanentemente todos os arquivos gravados pelo aplicativo.
+            </li>
+            <li>
+              <strong>Revogar o acesso da conta Google:</strong>
+              Acesse a página de permissões da conta Google em <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>, selecione o <strong>alexandria backup</strong> e clique em <em>Remover acesso</em>. A partir desse instante, o aplicativo não conseguirá mais autenticar nem se conectar à sua conta.
+            </li>
+          </ol>
+        </section>
+
+        <section id="pt-8">
+          <h2>8. Direitos do titular (LGPD) e contato</h2>
+          <p>
+            Em conformidade com a Lei Geral de Proteção de Dados Pessoais do Brasil (LGPD — Lei nº 13.709/2018), todo titular de dados pessoais tem garantido o direito à confirmação da existência de tratamento, acesso, correção, anonimização, bloqueio, eliminação e revogação de consentimento.
+          </p>
+          <p>
+            Como o <strong>alexandria backup</strong> é operado exclusivamente pelo próprio desenvolvedor para gerenciar seus próprios arquivos particulares, o controle é total e direto do titular. Caso necessite de qualquer esclarecimento sobre o exercício de direitos, entre em contato pelo e-mail: <a href="mailto:pedrovendramini.pv@gmail.com">pedrovendramini.pv@gmail.com</a>.
+          </p>
+        </section>
+
+        <section id="pt-9">
+          <h2>9. Conformidade com os Serviços de API do Google</h2>
+          <div class="notice-box">
+            <p>
+              O uso e a transferência para qualquer outro aplicativo de informações recebidas das APIs do Google pelo <strong>alexandria backup</strong> seguirão a <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Dados de Usuário dos Serviços de API do Google</a> (Google API Services User Data Policy), incluindo os requisitos de <strong>Uso Limitado</strong> (Limited Use requirements).
+            </p>
+          </div>
+          <p>
+            Ressaltamos expressamente que os dados recebidos das APIs do Google jamais são transferidos, vendidos ou disponibilizados a terceiros, nem são utilizados para veiculação de anúncios, personalização de publicidade ou treinamento de modelos de inteligência artificial / machine learning.
+          </p>
+        </section>
+
+        <section id="pt-10">
+          <h2>10. Crianças, cookies e alterações desta política</h2>
+          <ul>
+            <li><strong>Proteção a crianças:</strong> O aplicativo não se destina nem é direcionado a crianças e não coleta dados de menores de idade.</li>
+            <li><strong>Cookies e rastreadores:</strong> Esta página estática e o aplicativo não utilizam cookies, armazenamento de rastreamento (local storage para rastreio), nem scripts de terceiros.</li>
+            <li><strong>Alterações nesta política:</strong> Por se tratar de um aplicativo de uso pessoal, alterações substanciais não são habituais. Caso ocorra qualquer ajuste técnico ou regulatório, o conteúdo será publicado nesta mesma página com a data de revisão devidamente atualizada.</li>
+          </ul>
+
+          <p class="last-updated">
+            Última atualização: 26 de outubro de 2026 (26/10/2026)
+          </p>
+        </section>
+      </main>
+
+      <hr class="policy-divider" />
+
+      <!-- ========================================================= -->
+      <!-- ENGLISH VERSION                                           -->
+      <!-- ========================================================= -->
+      <main id="en" lang="en">
+        <header>
+          <div class="app-badge">Personal Use Application</div>
+          <h1>Privacy Policy — alexandria backup</h1>
+          <p class="subtitle">Transparency regarding the use and protection of your data</p>
+        </header>
+
+        <!-- Table of Contents / Anchor links -->
+        <nav class="toc" aria-label="Table of contents in English">
+          <div class="toc-title">Table of Contents</div>
+          <ol>
+            <li><a href="#en-1">Who we are and how to contact us</a></li>
+            <li><a href="#en-2">What the application is</a></li>
+            <li><a href="#en-3">What data we access (and what we do not access)</a></li>
+            <li><a href="#en-4">What we use the data for</a></li>
+            <li><a href="#en-5">How data is stored and protected</a></li>
+            <li><a href="#en-6">Data sharing</a></li>
+            <li><a href="#en-7">Data retention and deletion</a></li>
+            <li><a href="#en-8">Rights of the data subject and contact</a></li>
+            <li><a href="#en-9">Google API Services User Data Policy compliance</a></li>
+            <li><a href="#en-10">Children, cookies, and changes to this policy</a></li>
+          </ol>
+        </nav>
+
+        <section id="en-1">
+          <h2>1. Who we are and how to contact us</h2>
+          <p>
+            <strong>alexandria backup</strong> is a strictly personal-use OAuth application and project, developed and maintained by Pedro Vendramini.
+          </p>
+          <p>
+            For any inquiries, questions, or requests concerning this policy and the application's privacy practices, please contact directly via email: <a href="mailto:pedrovendramini.pv@gmail.com">pedrovendramini.pv@gmail.com</a>.
+          </p>
+          <p>
+            This application is neither offered as a commercial service nor distributed for public use; there are no other users other than the owner/maintainer.
+          </p>
+        </section>
+
+        <section id="en-2">
+          <h2>2. What the application is</h2>
+          <p>
+            <strong>alexandria backup</strong> is a personal automation tool designed to create encrypted backups of files from the owner's domestic server directly to the owner's own Google Drive cloud storage.
+          </p>
+          <p>
+            The application operates by integrating well-established open-source utilities: <strong>restic</strong> (for chunk-level deduplication and end-to-end client-side encryption) and <strong>rclone</strong> (for cloud synchronization and data transfer via Google APIs).
+          </p>
+        </section>
+
+        <section id="en-3">
+          <h2>3. What data we access (and what we do not access)</h2>
+          <p>
+            The application follows the principle of least privilege:
+          </p>
+          <ul>
+            <li>
+              <strong>What we access:</strong> The application exclusively requests the restricted application data folder OAuth scope (<code>https://www.googleapis.com/auth/drive.appdata</code> / <code>drive.appfolder</code>). This scope grants permission to create, read, and write files exclusively within a hidden, dedicated folder created for this application on the owner's Google Drive.
+            </li>
+            <li>
+              <strong>What we DO NOT access:</strong> The application has <strong>NO access</strong> to files stored in "My Drive", emails (Gmail), contacts, calendar events, photos, Google Docs, or any other private data located in the Google account. The app has zero visibility of files existing outside its designated hidden application folder.
+            </li>
+          </ul>
+        </section>
+
+        <section id="en-4">
+          <h2>4. What we use the data for</h2>
+          <p>
+            The requested permissions and data are utilized exclusively for one single purpose:
+          </p>
+          <ul>
+            <li>To enable the application to upload, list, update, and read backup chunks in the hidden application data folder (<code>appdata</code>) in the owner's Google Drive, allowing backup archives to be reliably stored and restored.</li>
+          </ul>
+          <p>
+            No data is utilized for tracking user behavior, behavioral profiling, machine learning model training, commercial advertising, or any purpose beyond backup synchronization.
+          </p>
+        </section>
+
+        <section id="en-5">
+          <h2>5. How data is stored and protected</h2>
+          <p>
+            Data integrity and confidentiality are guaranteed through a zero-knowledge security architecture:
+          </p>
+          <ul>
+            <li>
+              <strong>Pre-upload client-side encryption:</strong> All files and directories are encrypted locally on the home server by <em>restic</em> prior to network transmission. Data arrives at Google Drive already completely ciphered.
+            </li>
+            <li>
+              <strong>Locally held keys and tokens:</strong> The restic encryption password/key, along with OAuth authentication tokens, are stored strictly on the owner's local server storage. No keys or tokens are ever uploaded to third-party intermediary servers.
+            </li>
+            <li>
+              <strong>Encrypted transmission:</strong> All network communication with Google's servers takes place over modern, industry-standard encrypted transport layers (HTTPS / TLS).
+            </li>
+          </ul>
+        </section>
+
+        <section id="en-6">
+          <h2>6. Data sharing</h2>
+          <p>
+            There is no data sharing whatsoever:
+          </p>
+          <ul>
+            <li><strong>No sale of data:</strong> No information is sold, rented, or traded under any circumstances.</li>
+            <li><strong>No advertising:</strong> There is no advertising, ad tracking, or commercial marketing.</li>
+            <li><strong>No third parties:</strong> No data is disclosed to partner companies, brokers, or telemetry vendors.</li>
+            <li><strong>No analytics:</strong> The application incorporates no analytics trackers, crash reporting SDKs, or external monitoring software.</li>
+          </ul>
+        </section>
+
+        <section id="en-7">
+          <h2>7. Data retention and deletion</h2>
+          <p>
+            Backup files remain stored within the hidden application folder on Google Drive for as long as the owner chooses to keep them, based on retention policies defined directly in restic.
+          </p>
+          <p>
+            To delete all data stored by the application or revoke its access at any point in time:
+          </p>
+          <ol>
+            <li>
+              <strong>Delete hidden application data in Google Drive:</strong>
+              Open Google Drive in your web browser, navigate to <em>Settings</em> (gear icon in the top right) &gt; <em>Manage Apps</em>. Locate <strong>alexandria backup</strong>, click <em>Options</em>, and select <em>Delete hidden app data</em>. This permanently deletes all files created by the application.
+            </li>
+            <li>
+              <strong>Revoke Google account access:</strong>
+              Visit the Google security permissions page at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>, click on <strong>alexandria backup</strong>, and click <em>Remove Access</em>. The application will immediately lose authorization to connect to the Google account.
+            </li>
+          </ol>
+        </section>
+
+        <section id="en-8">
+          <h2>8. Rights of the data subject and contact</h2>
+          <p>
+            In alignment with the Brazilian General Data Protection Law (LGPD — Law No. 13,709/2018) and international privacy principles, individuals hold the right to confirm the existence of data processing, access, rectify, anonymize, erase, and revoke consent regarding their personal information.
+          </p>
+          <p>
+            Because <strong>alexandria backup</strong> is maintained and operated exclusively by the individual owner for their personal backups, complete control resides directly with the owner. For any privacy requests, reach out at: <a href="mailto:pedrovendramini.pv@gmail.com">pedrovendramini.pv@gmail.com</a>.
+          </p>
+        </section>
+
+        <section id="en-9">
+          <h2>9. Google API Services User Data Policy compliance</h2>
+          <div class="notice-box">
+            <p>
+              <strong>alexandria backup</strong>'s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.
+            </p>
+          </div>
+          <p>
+            We specifically affirm that information received from Google APIs will never be transferred, sold, or made available to third parties, nor will it ever be used for serving advertisements or for training artificial intelligence or machine learning models.
+          </p>
+        </section>
+
+        <section id="en-10">
+          <h2>10. Children, cookies, and changes to this policy</h2>
+          <ul>
+            <li><strong>Children's privacy:</strong> The application is not aimed at or intended for children and does not collect information from minors.</li>
+            <li><strong>Cookies and tracking:</strong> This static webpage and the application do not use cookies, tracking pixels, local storage trackers, or third-party tracking scripts.</li>
+            <li><strong>Policy modifications:</strong> As an internal personal tool, changes to this policy are infrequent. Any updates will be published on this page with an updated revision date.</li>
+          </ul>
+
+          <p class="last-updated">
+            Last updated: October 26, 2026 (26/10/2026)
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>alexandria backup — Política de Privacidade / Privacy Policy</p>
+      </footer>
+    </div>
+  </body>
+</html>
